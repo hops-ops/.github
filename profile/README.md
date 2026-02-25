@@ -6,7 +6,9 @@ It is in very active development, and many of the repos that exist now are exper
 
 The following are good!
 
-## AWS Configurations
+## AWS
+
+### Configurations
 
 | Name | Description | Repository |
 |------|-------------|------------|
@@ -21,7 +23,7 @@ The following are good!
 | pod-identity | IAM roles and EKS Pod Identity associations for Kubernetes service accounts | [hops-ops/aws-pod-identity](https://github.com/hops-ops/aws-pod-identity) |
 | ram-share | Share AWS resources across accounts using Resource Access Manager | [hops-ops/aws-ram-share](https://github.com/hops-ops/aws-ram-share) |
 
-### AWS Helm Wrappers
+### Helm Wrappers
 
 | Name | Description | Repository |
 |------|-------------|------------|
@@ -30,13 +32,24 @@ The following are good!
 | external-secrets | external-secrets with AWS Pod Identity for Secrets Manager and SSM Parameter Store | [hops-ops/helm-aws-external-secrets](https://github.com/hops-ops/helm-aws-external-secrets) |
 | load-balancer-controller | AWS Load Balancer Controller with automated Pod Identity for IAM permissions | [hops-ops/helm-aws-load-balancer-controller](https://github.com/hops-ops/helm-aws-load-balancer-controller) |
 
-### AWS Stacks
+### Stacks
 
 | Name | Description | Repository |
 |------|-------------|------------|
 | observe | Observe stack with AWS Pod Identity for OpenCost billing access, and s3 data stores. | [hops-ops/stack-aws-observe](https://github.com/hops-ops/stack-aws-observe) |
 
-## Stacks
+## Platform Agnostic
+
+### Helm Charts
+
+| Name | Description | Repository |
+|------|-------------|------------|
+| cert-manager | cert-manager with a minimal, stable Crossplane interface | [hops-ops/helm-cert-manager](https://github.com/hops-ops/helm-cert-manager) |
+| external-dns | external-dns with a minimal, stable Crossplane interface | [hops-ops/helm-external-dns](https://github.com/hops-ops/helm-external-dns) |
+| external-secrets | external-secrets with a minimal, stable Crossplane interface | [hops-ops/helm-external-secrets](https://github.com/hops-ops/helm-external-secrets) |
+| metrics-server | Kubernetes Metrics Server for HPA, VPA, and kubectl top | [hops-ops/helm-metrics-server](https://github.com/hops-ops/helm-metrics-server) |
+
+### Stacks
 
 | Name | Description | Repository |
 |------|-------------|------------|
