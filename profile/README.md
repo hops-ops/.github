@@ -23,20 +23,15 @@ The following are good!
 | pod-identity | IAM roles and EKS Pod Identity associations for Kubernetes service accounts | [hops-ops/aws-pod-identity](https://github.com/hops-ops/aws-pod-identity) |
 | ram-share | Share AWS resources across accounts using Resource Access Manager | [hops-ops/aws-ram-share](https://github.com/hops-ops/aws-ram-share) |
 
-### Helm Wrappers
-
-| Name | Description | Repository |
-|------|-------------|------------|
-| cert-manager | cert-manager with AWS Pod Identity for Route53 DNS01 challenges | [hops-ops/helm-aws-cert-manager](https://github.com/hops-ops/helm-aws-cert-manager) |
-| external-dns | external-dns with AWS Pod Identity for Route53 DNS record management | [hops-ops/helm-aws-external-dns](https://github.com/hops-ops/helm-aws-external-dns) |
-| external-secrets | external-secrets with AWS Pod Identity for Secrets Manager and SSM Parameter Store | [hops-ops/helm-aws-external-secrets](https://github.com/hops-ops/helm-aws-external-secrets) |
-| load-balancer-controller | AWS Load Balancer Controller with automated Pod Identity for IAM permissions | [hops-ops/helm-aws-load-balancer-controller](https://github.com/hops-ops/helm-aws-load-balancer-controller) |
-
 ### Stacks
 
 | Name | Description | Repository |
 |------|-------------|------------|
-| observe | Observe stack with AWS Pod Identity for OpenCost billing access, and s3 data stores. | [hops-ops/stack-aws-observe](https://github.com/hops-ops/stack-aws-observe) |
+| base | Base stack for AWS. Includes `aws-load-balancer-controller`. | [hops-ops/aws-base-stack](https://github.com/hops-ops/aws-base-stack) |
+| crossplane | Crossplane stack for AWS. Installs and configures Crossplane and aws, github, helm, and k8s, providers.  | [hops-ops/aws-crossplane-stack](https://github.com/hops-ops/aws-crossplane-stack) |
+| dns | DNS stack for AWS.  | [hops-ops/aws-dns-stack](https://github.com/hops-ops/aws-dns-stack) |
+| observe | Observe stack with Prometheus for Metrics, Alertmanager for Alerts, Loki for logs, Grafana + Operator + Datasources + Dashboards, Tempo for tracing data, k8s-monitoring chart for Alloy, and OpenCost for cost reporting. | [hops-ops/aws-observe-stack](https://github.com/hops-ops/aws-observe-stack) |
+| secret | Secret stack – External Secrets plus ClusterStore config connected to AWS Secrets Manager | [hops-ops/aws-secret-stack](https://github.com/hops-ops/aws-secret-stack) |
 
 ## Platform Agnostic
 
@@ -44,9 +39,6 @@ The following are good!
 
 | Name | Description | Repository |
 |------|-------------|------------|
-| cert-manager | cert-manager with a minimal, stable Crossplane interface | [hops-ops/helm-cert-manager](https://github.com/hops-ops/helm-cert-manager) |
-| external-dns | external-dns with a minimal, stable Crossplane interface | [hops-ops/helm-external-dns](https://github.com/hops-ops/helm-external-dns) |
-| external-secrets | external-secrets with a minimal, stable Crossplane interface | [hops-ops/helm-external-secrets](https://github.com/hops-ops/helm-external-secrets) |
 | metrics-server | Kubernetes Metrics Server for HPA, VPA, and kubectl top | [hops-ops/helm-metrics-server](https://github.com/hops-ops/helm-metrics-server) |
 
 ### Stacks
