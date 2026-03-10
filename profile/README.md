@@ -45,6 +45,8 @@ The following are good!
 
 | Name | Description | Repository |
 |------|-------------|------------|
-| istio | Istio (base, istiod, gateways) with observability defaults and optional egress allowlisting | [hops-ops/stack-istio](https://github.com/hops-ops/stack-istio) |
-| knative | Knative Serving, Eventing, and optional NATS JetStream on any cluster with Istio | [hops-ops/stack-knative](https://github.com/hops-ops/stack-knative) |
-| observe | Complete observability stack -- metrics, logs, traces, cost monitoring, and Grafana dashboards | [hops-ops/stack-observe](https://github.com/hops-ops/stack-observe) |
+| gitops | ArgoCD and Github gitops configuration | [hops-ops/gitops-stack](https://github.com/hops-ops/gitops-stack) |
+| istio | Istio (base, istiod, gateways) with observability defaults and optional egress allowlisting | [hops-ops/istio-stack](https://github.com/hops-ops/istio-stack) |
+| knative | Knative Serving, Eventing, and optional NATS JetStream on any cluster with Istio | [hops-ops/knative-stack](https://github.com/hops-ops/knative-stack) |
+| observe | Complete observability stack -- metrics, logs, traces, cost monitoring, and Grafana dashboards | [hops-ops/observe-stack](https://github.com/hops-ops/observe-stack) |
+| psql | StackGres and GoAtlas Operator for decalarative databased and schemas, with advanced scaling options | [hops-ops/observe-stack](https://github.com/hops-ops/observe-stack) |
