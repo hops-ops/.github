@@ -2,9 +2,7 @@
 
 hops is a cloud native gitops development platform, built from the ground up to be given away.
 
-It is in very active development, and many of the repos that exist now are experimental.
-
-The following are good!
+It is in very active development! No promises made at this stage.
 
 ## AWS
 
@@ -34,12 +32,6 @@ The following are good!
 | secret | Secret stack – External Secrets plus ClusterStore config connected to AWS Secrets Manager | [hops-ops/aws-secret-stack](https://github.com/hops-ops/aws-secret-stack) |
 
 ## Platform Agnostic
-
-### Helm Charts
-
-| Name | Description | Repository |
-|------|-------------|------------|
-| metrics-server | Kubernetes Metrics Server for HPA, VPA, and kubectl top | [hops-ops/helm-metrics-server](https://github.com/hops-ops/helm-metrics-server) |
 
 ### Stacks
 
